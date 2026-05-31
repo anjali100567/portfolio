@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-slate-300 font-space;
+  }
+}
+
+@layer utilities {
+  .bg-dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 255, 231, 0.3);
+  }
+  
+  .glow-cyan-hover:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 231, 0.5);
+  }
+
+  .radial-glow {
+    background: radial-gradient(circle at center, rgba(0, 255, 231, 0.08) 0%, transparent 60%);
+  }
+}
+
+/* Custom Scrollbar for a cyberpunk feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffe7;
+}
