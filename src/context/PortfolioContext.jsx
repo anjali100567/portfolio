@@ -4,7 +4,7 @@ const PortfolioContext = createContext();
 
 // Using a placeholder GitHub username for the CSE student profile.
 // Change this to your actual GitHub username!
-const GITHUB_USERNAME = "anli-cse"; 
+const GITHUB_USERNAME = "anjali100567"; 
 
 export const PortfolioProvider = ({ children }) => {
   const [projects, setProjects] = useState([]);
