@@ -55,7 +55,7 @@ export default function Hero() {
           <div className="w-[130px] h-[130px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-cyan-400 glow-cyan overflow-hidden">
             <img 
               src={profileImg} 
-              alt="Anli Profile" 
+              alt="Anjali Raj Profile" 
               className="w-full h-full object-cover"
             />
           </div>
@@ -76,7 +76,7 @@ export default function Hero() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold font-space text-white mb-6"
         >
-          Hi, I'm Anli<motion.span 
+          Hi, I'm ANJALI RAJ<motion.span 
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 0.8, repeat: Infinity }}
             className="text-cyan-400"

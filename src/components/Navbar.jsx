@@ -21,7 +21,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="font-fira text-2xl font-bold text-cyan-400 tracking-tighter hover:glow-cyan transition-all duration-300">
-              &lt;Anli/&gt;
+              &lt;AnjaliRaj/&gt;
             </a>
           </div>
 

@@ -44,7 +44,7 @@ export const PortfolioProvider = ({ children }) => {
               return {
                 id: repo.id,
                 title: repo.name.replace(/-/g, ' '),
-                description: repo.description || "A project built by Anli.",
+                description: repo.description || "A project built by Anjali Raj.",
                 category: category,
                 language: lang,
                 html_url: repo.html_url,
