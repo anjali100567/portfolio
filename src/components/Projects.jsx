@@ -4,7 +4,7 @@ import { usePortfolio } from '../context/PortfolioContext';
 import { ExternalLink, FolderGit2 } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa6';
 
-const TABS = ['All', 'Django', 'C', 'Java', 'WebDev'];
+const TABS = ['All', 'Python', 'AI', 'Machine Learning', 'Django', 'C', 'Java', 'WebDev'];
 
 export default function Projects() {
   const { projects, loading, GITHUB_USERNAME } = usePortfolio();
@@ -12,7 +12,16 @@ export default function Projects() {
 
   const filteredProjects = projects.filter(project => {
     if (activeTab === 'All') return true;
-    if (activeTab === 'Django') return project.title.toLowerCase().includes('django') || project.language === 'Python';
+    if (activeTab === 'Django') return project.title.toLowerCase().includes('django');
+    if (activeTab === 'Python') return project.category === 'Python' || project.language === 'Python';
+    if (activeTab === 'AI') {
+      const text = (project.title + ' ' + project.description).toLowerCase();
+      return text.includes('ai') || text.includes('artificial intelligence');
+    }
+    if (activeTab === 'Machine Learning') {
+      const text = (project.title + ' ' + project.description).toLowerCase();
+      return text.includes('ml') || text.includes('machine learning') || text.includes('classifier') || text.includes('model');
+    }
     return project.category === activeTab;
   });
 

@@ -22,7 +22,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-slate-400 font-space text-lg mb-10">
-            Currently looking for internship opportunities. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!
+            Whether you have a question, a project idea, or just want to say hi, my inbox is always open!
           </p>
         </motion.div>
 
