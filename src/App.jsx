@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Tools from './components/Tools';
+import SoftSkills from './components/SoftSkills';
+import Certifications from './components/Certifications';
 import BasicProjects from './components/BasicProjects';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -18,6 +21,9 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Tools />
+          <SoftSkills />
+          <Certifications />
           <BasicProjects />
           <Projects />
           <Contact />
